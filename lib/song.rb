@@ -42,5 +42,6 @@ class Song
   end
   def self.new_from_filename(filename)
     file_array= filename.split(/[-.]/)
+    file_array.delete(".mp3")
   end
 end
